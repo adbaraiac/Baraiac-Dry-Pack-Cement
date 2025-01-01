@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baraiac Cement</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,350;1,350&display=swap" rel="styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="Home">
+        <div class="slideshow-container">
+            <div id = "header">
+            <img id="logo" src="./IMG_7991_transparent.png" alt="Baraiac Cement Logo">
+            <button class = "buttons" id = "button1" onclick="location.href='#Home'">WELCOME</button>
+            <button class = "buttons" id = "button2" onclick="location.href='#Services'">SERVICES</button>
+            <button class = "buttons" id = "button3" onclick="location.href='#Portfolio'">PORTFOLIO</button>
+            <button class = "buttons" id = "button4" onclick="location.href='#About'">ABOUT</button>
+            <button class = "buttons" id = "button5" onclick="location.href='#Contact'">CONTACT</button>
+            <p id = "BCement">Troy, MI 48083.</p>
+        </div>
+        <div class="slide fade">
+            <img id="slide1" src="./IMG_7145.jpg" alt="Image 1">
+            <div class="text-overlay">
+                <h2 class = "centerH" id = "hOn1">Custom Solutions for All Your Floor Leveling Needs!</h2>
+                <p id = "pOn1">From leveling to pitching floors, we deliver precision and quality to every project.</p>
+            </div>
+        </div>
+        
+        <div class="slide fade">
+            <img id="slide2" src="./IMG_8146.jpg" alt="Image 2">
+            <div class="text-overlay">
+                <h2 class = "centerH" id = "hOn2">Expert Craftsmanship, Built to Last</h2>
+                <p id="pOn2">With over 10 years of experience, our attention to detail ensures floors that stand the test of time.</p>
+            </div>
+        </div>
+
+        <div class="slide fade">
+                <img id = "slide3" src="./IMG_8198.jpg" alt="Image 3">
+                <div class="text-overlay">
+                    <h2 class = "centerH" id = "hOn3">Transforming Your Space, One Level Floor at a Time</h2>
+                    <p id = "pOn3">Whether it's residential or commercial, we create the perfect foundation for any surface.</p>
+                </div>
+        </div>
+        <div class="slide fade">
+                <img id = "slide4" src="./IMG_8208.jpg" alt="Image 4">  
+                <div class="text-overlay">
+                    <h2 class = "centerH" id = "hOn4">Contact Us Now for a Free Consultation!</h2>
+                    <p id = "pOn4">Get in touch today and start your next project with a solid foundation you can trust.</p>
+                    <button  id = "buttonContact" onclick="location.href='#Contact'">CONTACT</button>
+                </div>
+        </div>
+            <a id="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a id="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+        <script src="script.js"></script>
+    </div>
+    <hr class = "blue-line" id = "bOne">
+    <div id="Services">
+        <h2 id="hProcess">Our Process</h2>
+        <h2 id="hProcess1">Layout</h2>
+        <h2 id="hProcess2">Lines</h2>
+        <h2 id="hProcess3">Level</h2>
+        
+        <div class="flip-card1">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" id="fcf1">
+                    <img class="iServices" id="iServices1" src="./IMG_8264.jpg" alt="Img5">
+                </div>
+                <div class="flip-card-back" id = "firststep">
+                    <h2>Lay Paper and Wire Mesh <br> Spread Tinset</h2>
+                    <p>If the base floor is cement well use tinset If the base floor is plywoord we will lay a base of paper and wire mesh</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="flip-card2">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" id="fcf2">
+                    <img class="iServices" id="iServices2" src="./IMG_8271.jpg" alt="Img6">
+                </div>
+                <div class="flip-card-back" id = "secondstep">
+                    <h2>Create Base Lines Using Laser and Leveler</h2>
+                    <p>We use precise lazering and constant level checking to create good guides for our pulling</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="flip-card3">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" id="fcf3">
+                    <img class="iServices" id="iServices3" src="./IMG_8273.jpg" alt="Img7">
+                </div>
+                <div class="flip-card-back" id = "thirdstep">
+                    <h2>Pull a Level Floor!</h2>
+                    <p>Finally, we will pull and finish a perfect level floor</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class = "blue-line" id = "bThree">
+    <h2 id= "hPortfolio">Portfolio</h2>
+    <div id="Portfolio">
+        <div id="Portfolio">
+                <div class="Portfolio-container">
+                <a href="residential.html" class="Portfolio-link">
+                    <img src="./IMG_7145.jpg" alt="Portfolio 1" class="Portfolio-image">
+                 </a>
+                <a href="commercial.html" class="Portfolio-link">
+                    <img src="./IMG_0004.jpg" alt="Portfolio 2" class="Portfolio-image" id = "commercialIMG">
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr class="blue-line" id = "bTwo">
+    <h2 id = "hResidential">Residential</h2>
+    <h2 id = "hCommercial">Commercial</h2>
+    <footer>
+
+        <div id="About">
+            <h2 id="hAbout">About Us</h2>
+            <p id = "pAbout">   At Baraiac Cement, we bring over <strong class="strongBlue">10 years</strong> of hands-on experience in leveling floors for tile installation. <br> As former tilers, we understand the importance of a <strong class="strongBlue">perfectly leveled surface</strong> to ensure long-lasting and <br>durable results. Our expertise in the precise art of floor preparation has allowed us to transition seamlessly <br>into the cement industry, where we continue to deliver <strong class="strongBlue">high-quality craftsmanship</strong>. Whether you're working on <br> a commercial project or a residential space, you can <strong class="strongBlue">trust our team</strong> to provide exceptional attention to detail<br> and a strong foundation for all your flooring needs.
+    
+            </p>
+            <img src = "./IMG_2367.jpg" alt = "Family Image" id= "Aimg"> 
+        </div>
+        <hr id="footerdivide">
+        <div id="Contact">
+            <h2 id = "hContact">Contact Us</h2>
+            <br>
+            <p id="pContact">Feel free to contact us anytime for a free estimate or if you have any questions. <br>
+                             <br>
+                             For the fastest response please call or text us here: </p>
+            <h3 id = "hPContact"><strong>Ben's Number: 248-379-9479</strong></h3>
+            </div>
+            <div class="contact-section">
+                <h2>GET IN TOUCH</h2>
+                <p><strong>Do not hesitate to call us</strong></p>
+                <p>Ben is the key person for any job enquiries. He will be happy to assist you over the phone.</p>
+            
+                <div class="call-info">
+                    <p>📞 <strong>Phone:</strong> <a href="tel:+12483799479">+1 (248) 379-9479</a></p>
+                    <p>🕒 <strong>Available:</strong> Mon-Fri, 9 AM - 6 PM</p>
+                </div>
+            </div>
+    </footer>
+</body>
+</html> 

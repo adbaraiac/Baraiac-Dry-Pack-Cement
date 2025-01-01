@@ -1,0 +1,631 @@
+body{
+background-color: #f2f2f2;
+overflow-x: hidden;
+margin: 0px;
+}
+
+#logo {
+    height: 100px;
+    width: 100px;
+    transform: translateY(-2px);
+    margin-left: 300px;
+}
+
+
+.buttons {
+    background-color: transparent; 
+    border: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff; 
+    transition: color 0.3s; 
+}
+
+.buttons:hover {
+    cursor: pointer;
+    color: #ddd; 
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px; 
+    background-color: rgba(36, 35, 35, 0); 
+    transition: background-color 0.3s; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0px; 
+    z-index: 1000; 
+}
+
+
+#slide1, #slide2, #slide3, #slide4{
+    height: 850px;
+    width: 1643px;
+    margin-left: -50px;
+    transform: translateY(-0px);
+    }
+
+#button1{
+    text-decoration: underline;
+    position: fixed;
+    margin-left: 450px;
+}
+#button2{
+    position: fixed;
+    margin-left: 565px;
+}
+#button3{
+    position: fixed;
+    margin-left: 680px;
+} 
+#button4{
+    position: fixed;
+    margin-left: 807px;
+}
+#button5{
+    position: fixed;
+    margin-left: 885px;
+}
+
+#BCement{
+    background-color: transparent; 
+    border: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff; 
+    transform: translateX(-15px);
+}
+
+#prev, #next {
+        position: absolute; 
+        top: 50%; 
+        transform: translateY(-50%); 
+        font-size: 40px; 
+        color: #f8f9f3; 
+        text-decoration: none; 
+        padding: 10px; 
+        background-color: transparent; 
+        border-radius: 5px; 
+        cursor: pointer; 
+        z-index: 2; 
+}
+    
+#prev {
+        left: 10px; 
+        border: 5px solid #f8f9f3;
+     }
+    
+#next {
+        right: 10px; 
+        border: 5px solid #f8f9f3;
+   }
+
+#Portfolio {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f9f3;
+    position: relative;    
+}
+
+.Portfolio-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    height: 800px;
+}
+
+.Portfolio-link {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.Portfolio-image {
+    max-width: 100%; 
+    height: 850px; 
+    cursor: pointer; 
+}
+
+.Portfolio-link:first-child {
+    border-right: 2px solid #ccc;
+}
+
+.blue-line{
+    border: none;
+    border-top: 2px solid rgba(58,111,145); /* Change the color and thickness */
+}
+#Services{
+    height: 800px;
+}
+
+.iServices{
+    width: 450px;
+    height: 450px;
+    position: relative;
+}
+
+#hProcess{
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    margin-left: 35px;
+}
+
+#hProcess1{
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    margin-left: 215px;
+    transform: translateY(-55px);
+}
+
+#hProcess2{
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    margin-left: 725px;
+    transform: translateY(-55px);
+}
+
+#hProcess3{
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    margin-left: 1250px;
+    transform: translateY(-55px);
+}
+
+ .flip-card1 {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px; /* This gives the 3D effect */
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    margin-left: 100px;
+    transform: translateY(55px);
+}
+
+.flip-card2 {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px; /* This gives the 3D effect */
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    margin-left: 215px;
+    transform: translateY(55px);
+}
+
+.flip-card3 {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px; /* This gives the 3D effect */
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    margin-left: 150px;
+    transform: translateY(65px);
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+#fcf1{
+    margin-left: 100px;
+    transform: translateY(205px);
+}
+
+#fcf2{
+    margin-left: 200px;
+    transform: translateY(190px);
+}
+
+#fcf3{
+    margin-left: 325px;
+    transform: translateY(200px);
+}
+
+.flip-card1:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card2:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card3:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: transparent;
+    margin-left: 150px;
+}
+
+.flip-card-back {
+    background-color: transparent;
+    color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#iServices1{
+    margin-left: -165px;
+    transform: translateY(-273px);
+ }
+    
+#iServices2{
+    margin-left: -430px;
+    transform: translateY(-250px);
+}
+ #iServices3{
+         margin-left: -620px;
+        transform: translateY(-258px);
+}
+
+#firststep{
+    margin-left: -30px;
+}
+
+#secondstep{
+    margin-left: 20px;
+}
+
+#thirdstep{
+    margin-left: 5px;
+}
+
+#Services{
+    background-color: transparent;
+    margin-left: -25px;
+}
+
+#About{
+    height: 500px;
+}
+
+#hAbout{
+    font-size: 30px;
+    position: relative;
+    margin-left: 300px;
+}
+
+#Aimg{
+    height: 350px;
+    width: 443px;
+    position: relative;
+    margin-left: 1000px;
+    transform: translateY(-295px);
+}
+
+#pAbout{
+    line-height: 2;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#footerdivide{
+    transform: translateY(-120px);
+    border: none;
+    border-top: 2px solid rgba(58,111,145); /* Change the color and thickness */
+}
+
+footer{
+    height: 765px;
+    background-color: rgb(36, 35, 35); 
+    color: #f2f2f2;
+    margin-top: -100px;
+}
+
+.text-overlay {
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 2; /* Ensure the text is above the image */
+}
+
+.text-overlay h2 {
+    margin: 0;
+    font-size: 50px;
+}
+
+.text-overlay p {
+    margin: 5px 0 0;
+    font-size: 30px;
+}
+
+.slideshow-container {
+    position: relative;
+}
+
+.slide {
+    position: relative;
+}
+
+.centerH{
+    position: relative;
+    transform: translateX(1000px);
+    transform: translateY(-400px);
+}
+
+#hOn1{
+    margin-left: 145px;
+    
+}
+
+#hOn2{
+    margin-left: 370px;
+}
+
+#hOn3{
+    margin-left: 150px;
+}
+
+#hOn4{
+    margin-left: 250px;
+    transform: translateY(-380px);
+}
+
+#pOn1{
+    margin-left: 230px;
+    transform: translateY(-400px);
+}
+
+#pOn2{
+    margin-left: 105px;
+    transform: translateY(-400px);
+}
+
+#pOn3{
+    margin-left: 180px;
+    transform: translateY(-400px);
+}
+
+#pOn4{
+    margin-left: 200px;
+    transform: translateY(-380px);
+}
+
+#buttonContact{
+    color: #f2f2f2;
+    background-color: rgba(36, 35, 35); 
+    cursor: pointer;
+    border: 2px solid #f2f2f2;
+    height: 40px;
+    width: 150px;
+    margin-left:655px;
+    transform: translateY(-370px);
+}
+
+#hResidential{
+    position: relative;
+    font-size: 45px;
+    color: #f2f2f2;
+    margin-left: 250px;
+    transform: translateY(-550px);
+    z-index: 2;
+}
+
+#hCommercial{
+    position: relative;
+    font-size: 45px;
+    color: #f2f2f2;
+    margin-left: 1050px;
+    transform: translateY(-640px);
+    z-index: 2;
+}
+
+#hPortfolio{
+    font-size: 45px;
+    margin-left: 655px;
+    margin-top: -100px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.contact-section {
+    background-image: url('PUTSOMETHINGHEREAIDEN');
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    color: white;
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+    position: relative;
+    transform: translateY(-420px);
+    margin-left: 975px;
+}
+
+footer.contact-section{
+    background-color: rgba(36, 35, 35); 
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-section strong {
+    font-size: 18px;
+}
+
+.contact-form input[type="email"], 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+}
+
+.contact-form input[type="email"]::placeholder,
+.contact-form textarea::placeholder {
+    color: white;
+}
+
+.contact-form textarea {
+    height: 80px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: white;
+    color: black;
+}
+
+#hContact{
+    font-size: 35px;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    transform: translate(280px,-142px);
+}
+
+#pContact{
+    position: relative;
+    font-size: 20px;
+    transform: translateY(-170px);
+}
+
+#hPContact{
+    font-size: 20;
+    position: relative;
+    color: rgb(58,111,145);
+    transform: translate(450px,-215.5px);
+}
+
+#Contact{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.strongBlue{
+    color: rgb(58,111,145);
+}
+
+#bOne{
+    transform: translateY(15px);
+}
+
+#bTwo{
+    transform: translateY(45px);
+}
+
+#bThree{
+    transform: translateY(-140px);
+}
+
+#commercialIMG{
+    width: 740px;
+}
+/* Styles for screens 600px wide or less */
+@media (max-width: 600px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    #logo {
+        margin: 0;
+        height: 80px; /* Reduced size */
+    }
+
+    .buttons {
+        font-size: 16px; /* Adjusted font size */
+    }
+
+    .slideshow-container img {
+        width: 100%;
+        height: auto; /* Responsive image sizing */
+    }
+
+    /* Flip cards adjust to fit smaller screens */
+    .flip-card1, .flip-card2, .flip-card3 {
+        width: 100%;
+        height: auto;
+        margin: 10px auto; /* Center cards with margin adjustments */
+    }
+
+    /* Adjust Portfolio images */
+    .Portfolio-container {
+        flex-direction: column;
+    }
+
+    #hOn1{
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 200px;
+    }
+    #pOn1{
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #hOn2{
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #pOn2{
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #hOn3{
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #pOn3{
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #hOn4{
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #pOn4{
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+}
